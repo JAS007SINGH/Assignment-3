@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<style>
+		.submit-button:hover{
+			text-transform: uppercase;
+		}
+		.button1{
+			background-color: red;
+		}
+		.container{
+			border: red 2px dashed;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Contact Us</h1>
+		<form name="contactForm" action="https://formspree.io/f/xrgvozab" onsubmit="return validateForm()" method="post">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="fname" required>
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lname" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="date">Date</label>
+			<input type="text" id="date" name="date" placeholder="dd/mm/yy" required>
+
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone" required>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" class="submit-button"  value="Submit">
+		</form>
+	</div>
+	<script src="contact.js"></script>
+
+    
+</body>
+</html>
